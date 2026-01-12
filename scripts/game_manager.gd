@@ -53,7 +53,7 @@ var score: int = 0:
 	set(value):
 		value_to_particle(value-score)
 		score = value
-		if !extend && score > 10000:
+		if !extend && score > 10000 :
 			AudioManager.extend.play()
 			lives += 1
 			extend = true

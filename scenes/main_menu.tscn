@@ -1,9 +1,15 @@
-[gd_scene load_steps=59 format=3 uid="uid://b0sx21jda6lwx"]
+[gd_scene load_steps=55 format=3 uid="uid://b0sx21jda6lwx"]
 
 [ext_resource type="Script" uid="uid://c8yuau1tgudqn" path="res://scenes/main_menu.gd" id="1_wu84c"]
 [ext_resource type="FontFile" uid="uid://hd254bbh7ofs" path="res://assets/Joystix.TTF" id="2_ekxnf"]
 [ext_resource type="Texture2D" uid="uid://bpe2yk6cpfu4v" path="res://assets/spritesheet.png" id="3_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://dkkb70nath15q" path="res://assets/level-tilemap.png" id="4_wu84c"]
+[ext_resource type="Texture2D" uid="uid://304t2jtaj0m5" path="res://assets/image1.png" id="5_8ln24"]
+[ext_resource type="Texture2D" uid="uid://l1wlvdqiww2u" path="res://assets/image1-30.png" id="6_oa1go"]
+[ext_resource type="Texture2D" uid="uid://bcytbf86oj68v" path="res://assets/image1-88.png" id="7_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://q81gjd540a3e" path="res://assets/image1-7.png" id="8_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://du4rdhpjjxmpd" path="res://assets/image1-65.png" id="8_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://b6ybw00sqjslm" path="res://assets/image1-1.png" id="8_tbmy8"]
 
 [sub_resource type="FontVariation" id="FontVariation_yev5y"]
 base_font = ExtResource("2_ekxnf")
@@ -75,37 +81,21 @@ font = SubResource("FontVariation_bqqt6")
 font_size = 11
 font_color = Color(1, 0.721569, 1, 1)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tbmy8"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(160, 192, 64, 16)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_5dd4i"]
 atlas = ExtResource("4_wu84c")
 region = Rect2(0, 48, 8, 8)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lgwnu"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(0, 16, 16, 16)
+atlas = ExtResource("5_8ln24")
+region = Rect2(380, 0, 190, 171)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_flqon"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(16, 16, 16, 16)
+atlas = ExtResource("5_8ln24")
+region = Rect2(190, 0, 190, 171)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rcqid"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(32, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1ajci"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(0, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7b55j"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(16, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5pajh"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(32, 0, 16, 16)
+atlas = ExtResource("5_8ln24")
+region = Rect2(0, 0, 190, 171)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_j7ex8"]
 animations = [{
@@ -118,9 +108,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_rcqid")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_flqon")
 }],
 "loop": true,
 "name": &"left",
@@ -128,37 +115,34 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1ajci")
+"texture": SubResource("AtlasTexture_lgwnu")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7b55j")
+"texture": SubResource("AtlasTexture_flqon")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5pajh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7b55j")
+"texture": SubResource("AtlasTexture_rcqid")
 }],
 "loop": true,
 "name": &"right",
 "speed": 12.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ajci"]
+atlas = ExtResource("6_oa1go")
+region = Rect2(200, 0, 200, 205)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7b55j"]
+atlas = ExtResource("6_oa1go")
+region = Rect2(0, 0, 200, 205)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5pajh"]
+atlas = ExtResource("7_tbmy8")
+region = Rect2(0, 0, 179, 192)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_a8gd2"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(32, 64, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hstxw"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(48, 64, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8egab"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(128, 64, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gw5y6"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(144, 64, 16, 16)
+atlas = ExtResource("7_tbmy8")
+region = Rect2(179, 0, 179, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j7ex8"]
 atlas = ExtResource("3_bqqt6")
@@ -168,10 +152,10 @@ region = Rect2(0, 128, 16, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_a8gd2")
+"texture": SubResource("AtlasTexture_1ajci")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hstxw")
+"texture": SubResource("AtlasTexture_7b55j")
 }],
 "loop": true,
 "name": &"default",
@@ -179,10 +163,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8egab")
+"texture": SubResource("AtlasTexture_5pajh")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gw5y6")
+"texture": SubResource("AtlasTexture_a8gd2")
 }],
 "loop": true,
 "name": &"fright",
@@ -198,20 +182,12 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1dfpl"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(32, 80, 16, 16)
+atlas = ExtResource("8_5dd4i")
+region = Rect2(167, 0, 167, 172)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qywvv"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(48, 80, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3wgol"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(128, 64, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1acrt"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(144, 64, 16, 16)
+atlas = ExtResource("8_5dd4i")
+region = Rect2(0, 0, 167, 172)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_svtp6"]
 atlas = ExtResource("3_bqqt6")
@@ -232,10 +208,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3wgol")
+"texture": SubResource("AtlasTexture_5pajh")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1acrt")
+"texture": SubResource("AtlasTexture_a8gd2")
 }],
 "loop": true,
 "name": &"fright",
@@ -250,21 +226,13 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1a85y"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(32, 96, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_gw5y6"]
+atlas = ExtResource("8_jk1qb")
+region = Rect2(186, 0, 186, 199)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hl5e0"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(48, 96, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_engjn"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(128, 64, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6h3lr"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(144, 64, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_3wgol"]
+atlas = ExtResource("8_jk1qb")
+region = Rect2(0, 0, 186, 199)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vr8o3"]
 atlas = ExtResource("3_bqqt6")
@@ -274,10 +242,10 @@ region = Rect2(32, 128, 16, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1a85y")
+"texture": SubResource("AtlasTexture_gw5y6")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hl5e0")
+"texture": SubResource("AtlasTexture_3wgol")
 }],
 "loop": true,
 "name": &"default",
@@ -285,10 +253,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_engjn")
+"texture": SubResource("AtlasTexture_5pajh")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6h3lr")
+"texture": SubResource("AtlasTexture_a8gd2")
 }],
 "loop": true,
 "name": &"fright",
@@ -303,21 +271,13 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6vcge"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(32, 112, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_hstxw"]
+atlas = ExtResource("8_tbmy8")
+region = Rect2(178, 0, 178, 184)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ip0br"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(48, 112, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xyero"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(128, 64, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tcusk"]
-atlas = ExtResource("3_bqqt6")
-region = Rect2(144, 64, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_8egab"]
+atlas = ExtResource("8_tbmy8")
+region = Rect2(0, 0, 178, 184)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dj67d"]
 atlas = ExtResource("3_bqqt6")
@@ -327,10 +287,10 @@ region = Rect2(48, 128, 16, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6vcge")
+"texture": SubResource("AtlasTexture_hstxw")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ip0br")
+"texture": SubResource("AtlasTexture_8egab")
 }],
 "loop": true,
 "name": &"default",
@@ -338,10 +298,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xyero")
+"texture": SubResource("AtlasTexture_5pajh")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_tcusk")
+"texture": SubResource("AtlasTexture_a8gd2")
 }],
 "loop": true,
 "name": &"fright",
@@ -564,7 +524,7 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("Info/VBoxContainer/VBoxContainer/Namco:visible")
+tracks/16/path = NodePath("Animation:visible")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
@@ -576,59 +536,59 @@ tracks/16/keys = {
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("Info/VBoxContainer/VBoxContainer/Midway:visible")
+tracks/17/path = NodePath("Animation/Pacman:animation")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
-"times": PackedFloat32Array(0, 7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, true]
-}
-tracks/18/type = "value"
-tracks/18/imported = false
-tracks/18/enabled = true
-tracks/18/path = NodePath("Animation:visible")
-tracks/18/interp = 1
-tracks/18/loop_wrap = true
-tracks/18/keys = {
-"times": PackedFloat32Array(0, 7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, true]
-}
-tracks/19/type = "value"
-tracks/19/imported = false
-tracks/19/enabled = true
-tracks/19/path = NodePath("Animation/Pacman:animation")
-tracks/19/interp = 1
-tracks/19/loop_wrap = true
-tracks/19/keys = {
 "times": PackedFloat32Array(8, 12, 18),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [&"left", &"right", &"right"]
 }
-tracks/20/type = "value"
-tracks/20/imported = false
-tracks/20/enabled = true
-tracks/20/path = NodePath("Animation/Pacman:position")
-tracks/20/interp = 1
-tracks/20/loop_wrap = true
-tracks/20/keys = {
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Animation/Pacman:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
 "times": PackedFloat32Array(8, 12, 13.25, 13.75, 14.5, 15, 16, 16.5, 17.5, 18),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(237, 36), Vector2(37, 36), Vector2(82.9375, 36), Vector2(82.9375, 36), Vector2(110.5, 36), Vector2(110.5, 36), Vector2(147.25, 36), Vector2(147.25, 36), Vector2(184, 36), Vector2(184, 36)]
 }
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Animation/Blinky:animation")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(8, 12, 13.25),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [&"default", &"fright", &"points"]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Animation/Blinky:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(8, 12, 13.25, 13.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(261, 36), Vector2(61, 36), Vector2(84.4375, 36), Vector2(84.4375, 36)]
+}
 tracks/21/type = "value"
 tracks/21/imported = false
 tracks/21/enabled = true
-tracks/21/path = NodePath("Animation/Blinky:animation")
+tracks/21/path = NodePath("Animation/Pinky:animation")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/keys = {
-"times": PackedFloat32Array(8, 12, 13.25),
+"times": PackedFloat32Array(8, 12, 14.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [&"default", &"fright", &"points"]
@@ -636,23 +596,23 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/imported = false
 tracks/22/enabled = true
-tracks/22/path = NodePath("Animation/Blinky:position")
+tracks/22/path = NodePath("Animation/Pinky:position")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/keys = {
-"times": PackedFloat32Array(8, 12, 13.25, 13.75),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(8, 12, 13.25, 13.75, 14.5, 15),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(261, 36), Vector2(61, 36), Vector2(84.4375, 36), Vector2(84.4375, 36)]
+"values": [Vector2(277, 36), Vector2(77, 36), Vector2(100.438, 36), Vector2(100.438, 36), Vector2(114.5, 36), Vector2(114.5, 36)]
 }
 tracks/23/type = "value"
 tracks/23/imported = false
 tracks/23/enabled = true
-tracks/23/path = NodePath("Animation/Pinky:animation")
+tracks/23/path = NodePath("Animation/Inky:animation")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/keys = {
-"times": PackedFloat32Array(8, 12, 14.5),
+"times": PackedFloat32Array(8, 12, 16),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [&"default", &"fright", &"points"]
@@ -660,23 +620,23 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/imported = false
 tracks/24/enabled = true
-tracks/24/path = NodePath("Animation/Pinky:position")
+tracks/24/path = NodePath("Animation/Inky:position")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = {
-"times": PackedFloat32Array(8, 12, 13.25, 13.75, 14.5, 15),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(8, 12, 13.25, 13.75, 14.5, 15, 16, 16.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(277, 36), Vector2(77, 36), Vector2(100.438, 36), Vector2(100.438, 36), Vector2(114.5, 36), Vector2(114.5, 36)]
+"values": [Vector2(293, 36), Vector2(93, 36), Vector2(116.438, 36), Vector2(116.438, 36), Vector2(130.5, 36), Vector2(130.5, 36), Vector2(149.25, 36), Vector2(149.25, 36)]
 }
 tracks/25/type = "value"
 tracks/25/imported = false
 tracks/25/enabled = true
-tracks/25/path = NodePath("Animation/Inky:animation")
+tracks/25/path = NodePath("Animation/Clyde:animation")
 tracks/25/interp = 1
 tracks/25/loop_wrap = true
 tracks/25/keys = {
-"times": PackedFloat32Array(8, 12, 16),
+"times": PackedFloat32Array(8, 12, 17.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [&"default", &"fright", &"points"]
@@ -684,47 +644,47 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/imported = false
 tracks/26/enabled = true
-tracks/26/path = NodePath("Animation/Inky:position")
+tracks/26/path = NodePath("Animation/Clyde:position")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/keys = {
-"times": PackedFloat32Array(8, 12, 13.25, 13.75, 14.5, 15, 16, 16.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(293, 36), Vector2(93, 36), Vector2(116.438, 36), Vector2(116.438, 36), Vector2(130.5, 36), Vector2(130.5, 36), Vector2(149.25, 36), Vector2(149.25, 36)]
-}
-tracks/27/type = "value"
-tracks/27/imported = false
-tracks/27/enabled = true
-tracks/27/path = NodePath("Animation/Clyde:animation")
-tracks/27/interp = 1
-tracks/27/loop_wrap = true
-tracks/27/keys = {
-"times": PackedFloat32Array(8, 12, 17.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [&"default", &"fright", &"points"]
-}
-tracks/28/type = "value"
-tracks/28/imported = false
-tracks/28/enabled = true
-tracks/28/path = NodePath("Animation/Clyde:position")
-tracks/28/interp = 1
-tracks/28/loop_wrap = true
-tracks/28/keys = {
 "times": PackedFloat32Array(8, 12, 13.25, 13.75, 14.5, 15, 16, 16.5, 17.5, 18),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(309, 36), Vector2(109, 36), Vector2(132.438, 36), Vector2(132.438, 36), Vector2(146.5, 36), Vector2(146.5, 36), Vector2(165.25, 36), Vector2(165.25, 36), Vector2(184, 36), Vector2(184, 36)]
 }
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("Animation/PelletAnim:visible")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(8, 12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("Animation/Pacman:visible")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(8, 13.25, 13.75, 14.5, 15, 16, 16.5, 17.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, false, true, false, true, false, true, false]
+}
 tracks/29/type = "value"
 tracks/29/imported = false
 tracks/29/enabled = true
-tracks/29/path = NodePath("Animation/PelletAnim:visible")
+tracks/29/path = NodePath("Animation/Blinky:visible")
 tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = {
-"times": PackedFloat32Array(8, 12),
+"times": PackedFloat32Array(8, 13.75),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -732,23 +692,23 @@ tracks/29/keys = {
 tracks/30/type = "value"
 tracks/30/imported = false
 tracks/30/enabled = true
-tracks/30/path = NodePath("Animation/Pacman:visible")
+tracks/30/path = NodePath("Animation/Pinky:visible")
 tracks/30/interp = 1
 tracks/30/loop_wrap = true
 tracks/30/keys = {
-"times": PackedFloat32Array(8, 13.25, 13.75, 14.5, 15, 16, 16.5, 17.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(8, 15),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [true, false, true, false, true, false, true, false]
+"values": [true, false]
 }
 tracks/31/type = "value"
 tracks/31/imported = false
 tracks/31/enabled = true
-tracks/31/path = NodePath("Animation/Blinky:visible")
+tracks/31/path = NodePath("Animation/Inky:visible")
 tracks/31/interp = 1
 tracks/31/loop_wrap = true
 tracks/31/keys = {
-"times": PackedFloat32Array(8, 13.75),
+"times": PackedFloat32Array(8, 16.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -756,34 +716,10 @@ tracks/31/keys = {
 tracks/32/type = "value"
 tracks/32/imported = false
 tracks/32/enabled = true
-tracks/32/path = NodePath("Animation/Pinky:visible")
+tracks/32/path = NodePath("Animation/Clyde:visible")
 tracks/32/interp = 1
 tracks/32/loop_wrap = true
 tracks/32/keys = {
-"times": PackedFloat32Array(8, 15),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
-tracks/33/type = "value"
-tracks/33/imported = false
-tracks/33/enabled = true
-tracks/33/path = NodePath("Animation/Inky:visible")
-tracks/33/interp = 1
-tracks/33/loop_wrap = true
-tracks/33/keys = {
-"times": PackedFloat32Array(8, 16.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
-tracks/34/type = "value"
-tracks/34/imported = false
-tracks/34/enabled = true
-tracks/34/path = NodePath("Animation/Clyde:visible")
-tracks/34/interp = 1
-tracks/34/loop_wrap = true
-tracks/34/keys = {
 "times": PackedFloat32Array(8, 18),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
@@ -975,7 +911,7 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Info/VBoxContainer/VBoxContainer/Namco:visible")
+tracks/15/path = NodePath("Animation:visible")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
@@ -987,43 +923,43 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("Info/VBoxContainer/VBoxContainer/Midway:visible")
+tracks/16/path = NodePath("Animation/Pacman:animation")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [false]
+"values": [&"left"]
 }
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("Animation:visible")
+tracks/17/path = NodePath("Animation/Pacman:position")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
+"update": 0,
+"values": [Vector2(237, 36)]
 }
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("Animation/Pacman:animation")
+tracks/18/path = NodePath("Animation/Blinky:animation")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"left"]
+"values": [&"default"]
 }
 tracks/19/type = "value"
 tracks/19/imported = false
 tracks/19/enabled = true
-tracks/19/path = NodePath("Animation/Pacman:position")
+tracks/19/path = NodePath("Animation/Blinky:position")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/keys = {
@@ -1035,7 +971,7 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/imported = false
 tracks/20/enabled = true
-tracks/20/path = NodePath("Animation/Blinky:animation")
+tracks/20/path = NodePath("Animation/Pinky:animation")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/keys = {
@@ -1047,7 +983,7 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/imported = false
 tracks/21/enabled = true
-tracks/21/path = NodePath("Animation/Blinky:position")
+tracks/21/path = NodePath("Animation/Pinky:position")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/keys = {
@@ -1059,7 +995,7 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/imported = false
 tracks/22/enabled = true
-tracks/22/path = NodePath("Animation/Pinky:animation")
+tracks/22/path = NodePath("Animation/Inky:animation")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/keys = {
@@ -1071,7 +1007,7 @@ tracks/22/keys = {
 tracks/23/type = "value"
 tracks/23/imported = false
 tracks/23/enabled = true
-tracks/23/path = NodePath("Animation/Pinky:position")
+tracks/23/path = NodePath("Animation/Inky:position")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/keys = {
@@ -1083,7 +1019,7 @@ tracks/23/keys = {
 tracks/24/type = "value"
 tracks/24/imported = false
 tracks/24/enabled = true
-tracks/24/path = NodePath("Animation/Inky:animation")
+tracks/24/path = NodePath("Animation/Clyde:animation")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = {
@@ -1095,7 +1031,7 @@ tracks/24/keys = {
 tracks/25/type = "value"
 tracks/25/imported = false
 tracks/25/enabled = true
-tracks/25/path = NodePath("Animation/Inky:position")
+tracks/25/path = NodePath("Animation/Clyde:position")
 tracks/25/interp = 1
 tracks/25/loop_wrap = true
 tracks/25/keys = {
@@ -1107,58 +1043,34 @@ tracks/25/keys = {
 tracks/26/type = "value"
 tracks/26/imported = false
 tracks/26/enabled = true
-tracks/26/path = NodePath("Animation/Clyde:animation")
+tracks/26/path = NodePath("Animation/PelletAnim:visible")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"default"]
+"values": [true]
 }
 tracks/27/type = "value"
 tracks/27/imported = false
 tracks/27/enabled = true
-tracks/27/path = NodePath("Animation/Clyde:position")
+tracks/27/path = NodePath("Animation/Pacman:visible")
 tracks/27/interp = 1
 tracks/27/loop_wrap = true
 tracks/27/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(237, 36)]
+"update": 1,
+"values": [true]
 }
 tracks/28/type = "value"
 tracks/28/imported = false
 tracks/28/enabled = true
-tracks/28/path = NodePath("Animation/PelletAnim:visible")
+tracks/28/path = NodePath("Animation/Blinky:visible")
 tracks/28/interp = 1
 tracks/28/loop_wrap = true
 tracks/28/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/29/type = "value"
-tracks/29/imported = false
-tracks/29/enabled = true
-tracks/29/path = NodePath("Animation/Pacman:visible")
-tracks/29/interp = 1
-tracks/29/loop_wrap = true
-tracks/29/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/30/type = "value"
-tracks/30/imported = false
-tracks/30/enabled = true
-tracks/30/path = NodePath("Animation/Blinky:visible")
-tracks/30/interp = 1
-tracks/30/loop_wrap = true
-tracks/30/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -1199,7 +1111,7 @@ offset_left = -39.5
 offset_right = 39.5
 offset_bottom = 23.0
 grow_horizontal = 2
-text = "HIGHSCORE"
+text = "ITALIA SHORE"
 label_settings = SubResource("LabelSettings_5dd4i")
 horizontal_alignment = 1
 
@@ -1218,6 +1130,7 @@ horizontal_alignment = 1
 vertical_alignment = 2
 
 [node name="1UP" type="Label" parent="."]
+layout_mode = 0
 offset_right = 79.0
 offset_bottom = 23.0
 text = "1up"
@@ -1275,7 +1188,7 @@ vertical_alignment = 1
 [node name="Blinky" type="Label" parent="Info/VBoxContainer/Blinky"]
 visible = false
 layout_mode = 2
-text = "   \"BLINKY\""
+text = "   \"SWAMI\""
 label_settings = SubResource("LabelSettings_8ln24")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1300,7 +1213,7 @@ vertical_alignment = 1
 [node name="Pinky" type="Label" parent="Info/VBoxContainer/Pinky"]
 visible = false
 layout_mode = 2
-text = "    \"PINKY\""
+text = "    \"MARCOLINO\""
 label_settings = SubResource("LabelSettings_rtw2f")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1325,7 +1238,7 @@ vertical_alignment = 1
 [node name="Inky" type="Label" parent="Info/VBoxContainer/Inky"]
 visible = false
 layout_mode = 2
-text = "  \"INKY\""
+text = "  \"KING DRAGO\""
 label_settings = SubResource("LabelSettings_wu84c")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1350,7 +1263,7 @@ vertical_alignment = 1
 [node name="Clyde" type="Label" parent="Info/VBoxContainer/Clyde"]
 visible = false
 layout_mode = 2
-text = "      \"CLYDE\""
+text = "      \"LA GISS\""
 label_settings = SubResource("LabelSettings_oa1go")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1404,31 +1317,7 @@ vertical_alignment = 1
 visible = false
 layout_mode = 2
 text = "
-BY CHANCHODOTDEV"
-label_settings = SubResource("LabelSettings_jk1qb")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Namco" type="HBoxContainer" parent="Info/VBoxContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-alignment = 1
-
-[node name="C" type="Label" parent="Info/VBoxContainer/VBoxContainer/Namco"]
-layout_mode = 2
-text = "©"
-label_settings = SubResource("LabelSettings_jk1qb")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="TextureRect" type="TextureRect" parent="Info/VBoxContainer/VBoxContainer/Namco"]
-layout_mode = 2
-texture = SubResource("AtlasTexture_tbmy8")
-
-[node name="Midway" type="Label" parent="Info/VBoxContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-text = "© MIDWAY MFG. CO."
+BY V3ntuz"
 label_settings = SubResource("LabelSettings_jk1qb")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -1450,35 +1339,43 @@ texture = SubResource("AtlasTexture_5dd4i")
 
 [node name="Pacman" type="AnimatedSprite2D" parent="Animation"]
 position = Vector2(237, 36)
+scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_j7ex8")
 animation = &"left"
 autoplay = "left"
 
 [node name="Blinky" type="AnimatedSprite2D" parent="Animation"]
 position = Vector2(237, 36)
+scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_svtp6")
 autoplay = "default"
 
 [node name="Pinky" type="AnimatedSprite2D" parent="Animation"]
 position = Vector2(237, 36)
+scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_vr8o3")
 autoplay = "default"
 
 [node name="Inky" type="AnimatedSprite2D" parent="Animation"]
 position = Vector2(237, 36)
+scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_dj67d")
 autoplay = "default"
 
 [node name="Clyde" type="AnimatedSprite2D" parent="Animation"]
 position = Vector2(237, 36)
+scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_4puye")
 autoplay = "default"
 
 [node name="Start" type="MarginContainer" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -1.5
+offset_bottom = -1.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 0
@@ -1507,14 +1404,14 @@ vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="Start/MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "1 PLAYER ONLY"
+text = "SPADINO ONLY"
 label_settings = SubResource("LabelSettings_wu84c")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label3" type="Label" parent="Start/MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "BONUS PAC-MAN FOR 10000 PTS"
+text = "BONUS SPADINO FOR 10000 PTS"
 label_settings = SubResource("LabelSettings_lgwnu")
 horizontal_alignment = 1
 vertical_alignment = 1

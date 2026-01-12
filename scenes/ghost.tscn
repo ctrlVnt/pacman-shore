@@ -138,7 +138,7 @@ script = ExtResource("1_t76o2")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 process_mode = 3
 sprite_frames = SubResource("SpriteFrames_k5nrt")
-animation = &"move_up_eaten"
+animation = &"frightend"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_t76o2")

@@ -13,6 +13,7 @@ config_version=5
 config/name="Pacman"
 run/main_scene="uid://b0sx21jda6lwx"
 config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/image="uid://c7t5p5hjtxehx"
 config/icon="uid://b61ecla5hl7x7"
 
 [autoload]

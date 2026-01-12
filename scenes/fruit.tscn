@@ -1,14 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bjd3s6u7e4drp"]
+[gd_scene load_steps=4 format=3 uid="uid://bjd3s6u7e4drp"]
 
-[ext_resource type="Texture2D" uid="uid://bpe2yk6cpfu4v" path="res://assets/spritesheet.png" id="1_lfepc"]
 [ext_resource type="Script" uid="uid://dqo0vftx1mj1o" path="res://scripts/fruit.gd" id="1_yvtr8"]
+[ext_resource type="Texture2D" uid="uid://d38g6s2fn2kuj" path="res://assets/image1-36.png" id="2_yvtr8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yvtr8"]
 size = Vector2(8, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yvtr8"]
-atlas = ExtResource("1_lfepc")
-region = Rect2(32, 48, 16, 16)
 
 [node name="Fruit" type="Area2D"]
 top_level = true
@@ -18,7 +14,8 @@ script = ExtResource("1_yvtr8")
 shape = SubResource("RectangleShape2D_yvtr8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = SubResource("AtlasTexture_yvtr8")
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_yvtr8")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 10.0

@@ -23,6 +23,7 @@ extends Node
 @onready var siren_4: AudioStreamPlayer = $Siren4
 @onready var siren_4_first_loop: AudioStreamPlayer = $Siren4FirstLoop
 @onready var start: AudioStreamPlayer = $Start
+@onready var sigla: AudioStreamPlayer = $Sigla
 
 signal ghosts_respawned
 
@@ -47,8 +48,12 @@ func stop_music() -> void:
 	fright.stop()
 	eyes_first_loop.stop()
 	eyes.stop()
-
+	
+func play_sigla() -> void:
+	sigla.play()
+	
 func play_start() -> void:
+	sigla.stop()
 	stop_music()
 	start.play()
 	get_tree().paused = true

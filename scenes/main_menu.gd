@@ -4,6 +4,7 @@ extends Control
 func _ready() -> void:
 	highscore.text = str(GameManager.highscore)
 	GameManager.init_values()
+	AudioManager.play_sigla()
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("start"):
